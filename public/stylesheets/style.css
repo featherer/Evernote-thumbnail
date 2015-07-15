@@ -1,0 +1,89 @@
+body {
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	margin: 0;
+	background-color: #eee;
+}
+
+a {
+	color: #00B7FF;
+}
+
+@media (max-width: 720px) {
+	.content {
+		width: 300px;
+	}
+}
+
+@media (min-width: 720px) {
+	.content {
+		width: 640px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.content {
+		width: 960px;
+	}
+}
+
+@media (min-width: 1360px) {
+	.content {
+		width: 1246px;
+	}
+}
+
+.acquire-image {
+	font-size: 14px;
+	display: inline-block;
+	font-weight: 800;
+	line-height: 1.5;
+	margin: 0 auto;
+	padding: 7px 15px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	background-color: #7abe9f;
+	color: white;
+}
+.wrap {
+	padding: 0 20px;
+	margin: 50px auto;
+}
+.content {
+	margin: 0 auto;
+}
+.image-list {
+	text-align: justify;
+	margin: 20px auto;
+}
+.image-list > img {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 20px;
+}
+
+.shade {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+	opacity: .4;
+	background-image: url('../images/progress.gif');
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: 50% 50%;
+}
+
+.justify-fix {
+	display: inline-block;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+}
